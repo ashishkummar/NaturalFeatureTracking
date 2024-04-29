@@ -10,19 +10,16 @@
 
 <body>
 
-    <a href="https://raw.githubusercontent.com/artoolkitx/artoolkit5/master/doc/Marker%20images/pinball.jpg"
-        class="ui marker" target="_blank">
-        🖼 Marker Image
-    </a>
+    
 
     <script src="js/third_party/three.js/three.min.js"></script>
     <script src="js/ARnftThreejs.js"></script>
     <script src="../dist/ARnft.js"></script>
 
     <script>
-        let width = 640;
-        let height = 480;
-        ARnft.ARnft.init(width, height, [["examples/DataNFT/pinball"]], [['pinball']], 'config.json', true)
+        let width = 666;
+        let height = 712;
+        ARnft.ARnft.init(width, height, [["examples/DataNFT/rs_100"]], [['pinball']], 'config.json', true)
             .then((nft) => {
                 document.addEventListener('containerEvent', function (ev) {
 
